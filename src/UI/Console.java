@@ -86,7 +86,7 @@ public class Console {
 
             System.out.println("Car removed successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Car not removed");
         }
     }
 
@@ -107,7 +107,7 @@ public class Console {
             carService.update(id, model, yearFabrication, acquisitionYear, km, warranty);
             System.out.println("Car updated successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Car not updated");
         }
     }
 
@@ -128,7 +128,7 @@ public class Console {
             carService.add(id, model, yearFabrication, acquisitionYear, km, warranty);
             System.out.println("Car added successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Car not added");
         }
     }
 
@@ -190,7 +190,7 @@ public class Console {
             clientCardService.add(id, firstName, secondName, CNP, birthDate, registrationDate);
             System.out.println("Client added successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Client not added");
         }
     }
 
@@ -211,7 +211,7 @@ public class Console {
             clientCardService.update(id, firstName, secondName, CNP, birthDate, registrationDate);
             System.out.println("Client updated successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Client not updated");
         }
     }
 
@@ -224,7 +224,7 @@ public class Console {
 
             System.out.println("Client removed successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Client not removed");
         }
     }
 
@@ -288,7 +288,7 @@ public class Console {
 
             System.out.println("Transaction added successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Transaction not added");
         }
     }
 
@@ -313,7 +313,7 @@ public class Console {
 
             System.out.println("Transaction updated successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Transaction not updated");
         }
     }
 
@@ -326,7 +326,7 @@ public class Console {
 
             System.out.println("Transaction removed successfully!");
         } catch (RuntimeException rex) {
-            System.out.println("Errors:\n" + rex.getMessage());
+            System.out.println("Transaction not removed");
         }
     }
 
