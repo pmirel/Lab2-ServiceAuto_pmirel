@@ -8,6 +8,7 @@ import Service.ClientCardService;
 import Service.CarService;
 import Service.TransactionService;
 import UI.Console;
+import UI.NewConsole;
 
 
 public class Main {
@@ -25,7 +26,7 @@ public class Main {
         TransactionRepository transactionRepository = new TransactionRepository(transactionValidator);
         TransactionService transactionService = new TransactionService(transactionRepository,carRepository,clientRepository);
 
-        Console console = new Console(carService,clientService,transactionService);
+        NewConsole console = new NewConsole(carService,clientService,transactionService);
         console.run();
 
     }
